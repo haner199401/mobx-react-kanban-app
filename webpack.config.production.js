@@ -28,7 +28,6 @@ module.exports = {
                         "react"
                     ],
                     plugins: [
-                        "transform-async-to-generator",
                         "transform-decorators-legacy"
                     ]
                 }
@@ -99,7 +98,7 @@ module.exports = {
         new ExtractTextPlugin("assets/styles.css"),
         new HtmlWebpackPlugin({
             hash: false,
-            template: "./index.hbs"
-        })
+            template: "./index.html"
+        }),
     ]
 };
