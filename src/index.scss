@@ -1,0 +1,55 @@
+body {
+  background-color: cornsilk;
+  font-family: sans-serif;
+}
+
+#root{
+  width: 80%;
+  margin:auto;
+}
+
+.addNote {
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.notes {
+  margin: 0.5em;
+  padding-left: 0;
+  max-width: 12em;
+  list-style: none;
+}
+
+.note {
+  overflow: auto;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  background-color: #fdfdfd;
+  box-shadow: 0 0 0.3em .03em rgba(0,0,0,.3);
+
+  &:hover {
+    box-shadow: 0 0 0.3em .03em rgba(0,0,0,.7);
+    transition: .6s;
+  }
+
+  &:hover .delete {
+    visibility: visible;
+  }
+
+  .value {
+    display: inline-block;
+  }
+
+  .editable {
+    float: left;
+  }
+
+  .delete {
+    float: right;
+    background-color: #fdfdfd;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+  }
+}
