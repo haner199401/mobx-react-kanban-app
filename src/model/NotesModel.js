@@ -37,7 +37,6 @@ export default class NotesModel {
         });
     }
 
-
     @action
     editNote(id, task) {
         this.notes.map(note => {
